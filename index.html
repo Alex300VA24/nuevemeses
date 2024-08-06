@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 9 meses amor</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background: #000;
+            color: #fff;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            animation: zoomOut 20s infinite linear; /* Animación para el efecto de cámara */
+        }
+        .slide.active {
+            display: block;
+        }
+        .text {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            font-size: 2em;
+            color: #f8f9fa;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 0.15em solid #f8f9fa;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff6b81; }
+        }
+        .text-typing {
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes zoomOut {
+            from {
+                transform: scale(1) translateZ(0);
+            }
+            to {
+                transform: scale(1.5) translateZ(-500px); /* Ajusta la escala y la distancia */
+            }
+        }
+        #music-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #ff6b81;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #music-button:disabled {
+            background-color: #ddd;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="img/cancion.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="slide active">
+            <img src="img/daniela1.jpg" alt="Imagen 1">
+            <div class="text text-typing">Estos nueve meses han sido los más maravillosos de mi vida.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela6.png" alt="Imagen 2">
+            <div class="text text-typing">Cada momento contigo es una bendición.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela2.jpg" alt="Imagen 3">
+            <div class="text text-typing">Nuestras risas juntos son los mejores momentos de mi vida.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela4.png" alt="Imagen 4">
+            <div class="text text-typing">Nuestros días juntos son como un sueño hecho realidad.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela5.png" alt="Imagen 5">
+            <div class="text text-typing">Desde la primera vez que salimos, supe que eras especial.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela3.png" alt="Imagen 6">
+            <div class="text text-typing">Estar contigo es lo mejor que me a pasado.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela7.jpg" alt="Imagen 7">
+            <div class="text text-typing">Tus palabras y gestos amorosos hacen que cada día sea especial.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela8.png" alt="Imagen 8">
+            <div class="text text-typing">Nuestro amor ha crecido y se ha fortalecido con cada desafío.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela10.jpg" alt="Imagen 9">
+            <div class="text text-typing">Eres mi amor mi vida mi tesoro y tambien mi niña tierna.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela9.png" alt="Imagen 10">
+            <div class="text text-typing">Nuestras pequeñas travesuras juntos han hecho mi vida más divertida.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela12.png" alt="Imagen 11">
+            <div class="text text-typing">Compartir risas y lágrimas contigo ha sido un viaje increíble.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela11.jpg" alt="Imagen 12">
+            <div class="text text-typing">Nuestras noches bajo las estrellas son recuerdos inolvidables.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela15.png" alt="Imagen 13">
+            <div class="text text-typing">Cada salida juntos ha sido una nueva aventura para recordar.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela13.png" alt="Imagen 14">
+            <div class="text text-typing">Cada conversación profunda y sincera ha acercado más nuestros corazones.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela14.png" alt="Imagen 15">
+            <div class="text text-typing">Celebrar tu cumpleaños a tu lado ha sido un privilegio.</div>
+        </div>
+        <div class="slide">
+            <img src="img/daniela16.png" alt="Imagen 16">
+            <div class="text text-typing">Por cada momento y por cada razón, te amo más de lo que las palabras pueden expresar.</div>
+        </div>
+        <div class="slide">
+            <img src="img/teamo.webp" alt="Imagen 17">
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const music = document.getElementById('background-music');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === slideIndex) {
+                    slide.classList.add('active');
+                }
+            });
+
+            // Detener la música y el cambio de diapositivas si estamos en la última foto
+            if (slideIndex === totalSlides - 1) {
+                clearInterval(slideInterval); // Detiene el cambio de diapositivas
+                if (music) {
+                    music.pause(); // Detiene la música
+                }
+            }
+
+            slideIndex = (slideIndex + 1) % totalSlides;
+        }
+
+        const slideInterval = setInterval(showSlides, 8500); // Cambia cada 8 segundos
+        // Función para activar la música
+        function playMusic() {
+            if (music.paused) {
+                music.play();
+                musicButton.disabled = true; // Desactiva el botón una vez que se reproduce la música
+            }
+        }
+
+        // Asigna la función al botón
+        musicButton.addEventListener('click', playMusic);
+
+        // Si la música termina, desactiva el botón de música
+        music.addEventListener('ended', () => {
+            clearInterval(slideInterval);
+        });
+    </script>
+</body>
+</html>
